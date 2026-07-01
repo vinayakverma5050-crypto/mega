@@ -8,11 +8,11 @@ export default defineConfig({
     tailwindcss(),
   ],
   resolve: {
-    alias: {
+      /* alias: {
       // Force Vite to use the version of React in your root node_modules
       'react': path.resolve(__dirname, 'node_modules/react'),
       'react-dom': path.resolve(__dirname, 'node_modules/react-dom'),
-    },
+    }, */
   },
 });
 
