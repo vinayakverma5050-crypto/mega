@@ -5,15 +5,21 @@ import path from 'path';
 
 export default defineConfig({
   plugins: [
+    react(),
     tailwindcss(),
   ],
-  resolve: {
-      /* alias: {
+  build: {
+    rollupOptions: {
+      external: ['appwrite']
+    }
+  }
+ /*  resolve: {
+       alias: {
       // Force Vite to use the version of React in your root node_modules
       'react': path.resolve(__dirname, 'node_modules/react'),
       'react-dom': path.resolve(__dirname, 'node_modules/react-dom'),
-    }, */
-  },
+    }, 
+  }, */ 
 });
 
 
