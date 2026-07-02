@@ -8,9 +8,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  build: {
-    
-  },
+  
   resolve: {
        alias: {
 
